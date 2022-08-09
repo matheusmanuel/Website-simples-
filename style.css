@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(#00000088,#00000028), url(img/background.png);
+    min-height: 100vh;
+    background-size: cover;
+}
+.container{
+    max-width: 1500px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+.btn-orange{
+    background-color: #FF5D00;
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+nav ul a::after{
+    content: '';
+    background-color: #FF5D00;
+    height: 3px;
+    display: block;
+    width: 0%;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.text-main{
+    width: 50%;
+    color: white;
+}
+.text-main h1{
+    font-size: 120px;
+}
+.text-main h1 span{
+    color: #FF5D00;
+}
+.text-main .medias-socias{
+    margin-top: 10px;
+}
+.text-main .medias-socias a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.form-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.form-main .form{
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+.form-main h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.form-main .form-input{
+    margin: 15px 0;
+    width: 370px;
+}
+.form-main .form-input input,
+.form-main .form-input textarea{
+    width: 100%;
+    border: 2px solid #ccc;
+    outline: none;
+    padding: 10px;
+    border-radius: 7px;
+    color: #757575;
+    transition: 0.3s;
+}
+.form-main .form-input textarea{
+    height: 100px;
+}
+.form-main .form-input input:focus,
+.form-main .form-input textarea:focus{
+    border-color: #FF5D00;
+}
+::selection{
+    background-color: #FF5D00;
+    color: white;
+}
